@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {HashRouter} from 'react-router-dom'
+import {BrowserRouter} from 'react-router-dom'
 import './index.css';
 import App from './App';
 import {ContextProvider} from './Context'
@@ -9,9 +9,9 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <ContextProvider>
-      <HashRouter basename="/">
+      <BrowserRouter>
         <App />
-      </HashRouter>
+      </BrowserRouter>
     </ContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
