@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import {ThemeProvider} from 'styled-components'
 import {lightTheme, darkTheme} from './Theme'
-import Main from './Main'
+import Serve from './Serve'
 
 
 function App() {
@@ -15,9 +15,9 @@ function App() {
   
   return (
     <ThemeProvider theme={themeChoice[theme]}>
-      <Main theme={theme} setTheme={setTheme}>
+      <Serve theme={theme} setTheme={setTheme}>
         Countries Rest App
-      </Main>
+      </Serve>
     </ThemeProvider>
   );
 
