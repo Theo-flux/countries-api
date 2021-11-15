@@ -112,7 +112,7 @@ export default function CountryInfo(){
 	return(
 		<Details>
 			<div className="link">
-				<Styledlink to ="/countries-app">
+				<Styledlink to ="/">
 					<i className="ri-arrow-left-s-fill"></i> 
 					<p>Back</p>
 				</Styledlink>
@@ -157,7 +157,7 @@ export default function CountryInfo(){
 									(
 										<>{country.map((item) => {
 											if(neighbour === item.alpha3Code){
-												return(<Borderlink to={`/countries-app/${item.name}`}>{item.name} </Borderlink>)
+												return(<Borderlink to={`/${item.name}`}>{item.name} </Borderlink>)
 											}
 										})}</>
 									)

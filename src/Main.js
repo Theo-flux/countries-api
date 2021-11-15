@@ -57,8 +57,8 @@ export default function Main({theme, setTheme}) {
 			<Nav theme={theme} setTheme={setTheme}/>
 			
 			<Routes>
-				<Route path='/countries-app' element={<Home/>}/>
-				<Route path='/countries-app/:countryId' element={<CountryInfo/>}/>
+				<Route path='/' element={<Home/>}/>
+				<Route path='/:countryId' element={<CountryInfo/>}/>
 			</Routes>
 			
 		</MainContainer>

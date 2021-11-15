@@ -51,7 +51,7 @@ export default function Home() {
 
 				}).map((item,index) => (
 					<div key={item.name.official}>
-						<Link to={`/countries-app/${item.name}`} style={{textDecoration:"none"}}>
+						<Link to={`/${item.name}`} style={{textDecoration:"none"}}>
 							<Card 
 								flag = {item.flags.svg}
 								name={item.name}
