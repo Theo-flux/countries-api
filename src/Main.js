@@ -51,7 +51,7 @@ const Head = styled.div`
 		align-items: flex-start;
 	}
 `
-export default function Serve({theme, setTheme}) {
+export default function Main({theme, setTheme}) {
 	return(
 		<MainContainer>
 			<Nav theme={theme} setTheme={setTheme}/>
